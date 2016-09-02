@@ -43,7 +43,7 @@ elif login_type == "facebook":
 time.sleep(0.3)
 print(reserve_date)
 while True:
-    if datetime.now() < reserve_date:
+    if datetime.datetime.now() < reserve_date:
         time.sleep(1)
     else:
         browser.get(meetup_url)
@@ -52,5 +52,5 @@ register_btn = browser.find_element_by_class_name("ofmBtn")
 register_btn.click()
 
 final_register_btn = browser.find_element_by_class_name("ofmBtn")
-# final_register_btn.click()
+final_register_btn.click()
 
