@@ -37,10 +37,14 @@ login_type = "facebook"
 meetup_url = "http://onoffmix.com/event/76453"
 ```
 
+### 모임 시간 설정
+아래의 코드에서 원하는 대로 예약시간을 변경한다.
+```python
+reserve_date = datetime.datetime(2016, 9, 28, 15, 30)
+```
+
 ## 실행
 아래의 명령어를 사용해 실행한다.
 ```shell
 python onoffmix_auto_register.py
 ```
-
-
