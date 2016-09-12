@@ -47,6 +47,7 @@ while True:
         time.sleep(1)
     else:
         browser.get(meetup_url)
+        break
     
 register_btn = browser.find_element_by_class_name("ofmBtn")
 register_btn.click()
